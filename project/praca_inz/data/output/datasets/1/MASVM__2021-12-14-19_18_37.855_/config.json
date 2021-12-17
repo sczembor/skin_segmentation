@@ -1,0 +1,172 @@
+{
+    "Svm": {
+        "KernelType": "RBF",
+        "UseSvmIteration": "false",
+        "SvmIterationNumber": "0",
+        "Epsilon": "0.001",
+        "OutputFolderPath": "C:\\Users\\stani.DESKTOP-UN71NOG\\praca_inz\\data\\output\\datasets\\1\\MASVM__2021-12-14-19_18_37.855_\\",
+        "Visualization": {
+            "Filename": "visualization.png",
+            "Create": "false",
+            "Width": "500",
+            "Height": "500"
+        },
+        "TxtLogFilename": "results.txt",
+        "Metric": "AUC",
+        "Type": "LibSvm",
+        "isRegression": "false",
+        "LogVerbosity": "Standard",
+        "ValidationData": "C:\\Users\\stani.DESKTOP-UN71NOG\\praca_inz\\data\\experiments\\datasets\\1\\validation.csv",
+        "TestData": "C:\\Users\\stani.DESKTOP-UN71NOG\\praca_inz\\data\\experiments\\datasets\\1\\test.csv",
+        "TrainingData": "C:\\Users\\stani.DESKTOP-UN71NOG\\praca_inz\\data\\experiments\\datasets\\1\\train.csv",
+        "MemeticTrainingSetSelection": {
+            "Svm": {
+                "isRegression": "false"
+            },
+            "PopulationSize": "10",
+            "NumberOfClasses": "2",
+            "Kernel": {
+                "Gamma": "1",
+                "C": "1"
+            },
+            "NumberOfClassExamples": "8",
+            "Memetic": {
+                "SuperIndividualsAlpha": "0.20000000000000001",
+                "PercentOfSupportVectorsThreshold": "0.29999999999999999",
+                "IterationsBeforeModeChange": "3",
+                "EducationProbability": "0.29999999999999999",
+                "ThresholdForMaxNumberOfClassExamples": "1",
+                "MaxK": "0"
+            },
+            "RandomNumberGenerator": {
+                "Name": "Mt_19937",
+                "IsSeedRandom": "true",
+                "Seed": "0"
+            },
+            "StopCondition": {
+                "Name": "MeanFitness",
+                "MeanFitness": {
+                    "Epsilon": "0.001"
+                }
+            },
+            "SelectionOperator": {
+                "Name": "TruncationSelection",
+                "TruncationSelection": {
+                    "TruncationCoefficient": "0.45454545454545453"
+                }
+            },
+            "Generation": {
+                "Name": "Random"
+            },
+            "CrossoverSelection": {
+                "Name": "LocalGlobalSelection",
+                "LocalGlobalSelection": {
+                    "HighLowCoefficient": "0.5",
+                    "IsLocalMode": "0"
+                }
+            },
+            "Crossover": {
+                "Name": "Memetic"
+            },
+            "Mutation": {
+                "Name": "GaSvm",
+                "GaSvm": {
+                    "ExchangePercent": "0.29999999999999999",
+                    "MutationProbability": "0.29999999999999999"
+                }
+            },
+            "Validation": {
+                "Name": "Regular"
+            },
+            "EnhanceTrainingSet": "false"
+        },
+        "FeatureSetSelection": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            },
+            "Kernel": {
+                "Gamma": "1",
+                "C": "1"
+            },
+            "StopCondition": {
+                "Name": "MeanFitness",
+                "MeanFitness": {
+                    "Epsilon": "0.001"
+                }
+            }
+        },
+        "MemeticFeatureSetSelection": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            },
+            "StopCondition": {
+                "Name": "MeanFitness",
+                "MeanFitness": {
+                    "Epsilon": "0.001"
+                }
+            }
+        },
+        "GaSvm": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            },
+            "Kernel": {
+                "Gamma": "1",
+                "C": "1"
+            },
+            "StopCondition": {
+                "Name": "MeanFitness",
+                "MeanFitness": {
+                    "Epsilon": "0.001"
+                }
+            }
+        },
+        "GeneticKernelEvolution": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            },
+            "StopCondition": {
+                "Name": "MeanFitness",
+                "MeanFitness": {
+                    "Epsilon": "0.001"
+                }
+            }
+        },
+        "CustomKernel": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            },
+            "StopCondition": {
+                "Name": "MeanFitness",
+                "MeanFitness": {
+                    "Epsilon": "0.001"
+                }
+            }
+        },
+        "SequentialGamma": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            },
+            "StopCondition": {
+                "Name": "MeanFitness",
+                "MeanFitness": {
+                    "Epsilon": "0.001"
+                }
+            }
+        },
+        "MultipleGammaMASVM": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            }
+        },
+        "RbfLinear": {
+            "RandomNumberGenerator": {
+                "IsSeedRandom": "true"
+            }
+        }
+    },
+    "Name": "MemeticTrainingSetSelection",
+    "GridSearch": {
+        "NumberOfIteratrions": "1"
+    }
+}
